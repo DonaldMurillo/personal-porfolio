@@ -1,0 +1,16 @@
+- [x] Add basic theme
+- [x] Add basic theme service
+- [ ] Create SEO service
+- [ ] Create buttons and styles
+- [ ] Create notifications and styles
+- [ ] Add icons
+- [ ] Add spinner
+- [ ] Create styles for links (a)
+- [ ] Create d-sys animations 
+- [ ] create d-sys transitions
+- [ ] create some helper classes
+- [ ] define breakpoints
+- [ ] create a screen service
+- [ ] bring in contact forms
+- [ ] Set up blog
+- [ ] Set up blog
