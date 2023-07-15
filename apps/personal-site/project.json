@@ -1,70 +1,74 @@
 {
-  "name": "personal-site",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "projectType": "application",
-  "sourceRoot": "apps/personal-site/src",
-  "targets": {
-    "build": {
-      "executor": "@nx/vite:build",
-      "outputs": [
-        "{options.outputPath}",
-        "dist/apps/personal-site/.nitro",
-        "dist/apps/personal-site/ssr",
-        "dist/apps/personal-site/analog"
-      ],
-      "options": {
-        "main": "apps/personal-site/src/main.ts",
-        "configFile": "apps/personal-site/vite.config.ts",
-        "outputPath": "dist/apps/personal-site/client"
-      },
-      "defaultConfiguration": "production",
-      "configurations": {
-        "development": {
-          "mode": "development"
-        },
-        "production": {
-          "sourcemap": false,
-          "mode": "production"
-        }
-      }
-    },
-    "serve": {
-      "executor": "@nx/vite:dev-server",
-      "defaultConfiguration": "development",
-      "options": {
-        "buildTarget": "personal-site:build",
-        "port": 4200
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "personal-site:build:development",
-          "hmr": true
-        },
-        "production": {
-          "buildTarget": "personal-site:build:production"
-        }
-      }
-    },
-    "extract-i18n": {
-      "executor": "@angular-devkit/build-angular:extract-i18n",
-      "options": {
-        "browserTarget": "personal-site:build"
-      }
-    },
-    "lint": {
-      "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "apps/personal-site/**/*.ts",
-          "apps/personal-site/**/*.html"
-        ]
-      }
-    },
-    "test": {
-      "executor": "@nx/vite:test",
-      "outputs": ["apps/personal-site/coverage"]
-    }
-  },
-  "tags": []
+	"name": "personal-site",
+	"$schema": "../../node_modules/nx/schemas/project-schema.json",
+	"projectType": "application",
+	"sourceRoot": "apps/personal-site/src",
+	"targets": {
+		"build": {
+			"executor": "@nx/vite:build",
+			"outputs": [
+				"{options.outputPath}",
+				"dist/apps/personal-site/.nitro",
+				"dist/apps/personal-site/ssr",
+				"dist/apps/personal-site/analog"
+			],
+			"options": {
+				"main": "apps/personal-site/src/main.ts",
+				"configFile": "apps/personal-site/vite.config.ts",
+				"outputPath": "dist/apps/personal-site/client"
+			},
+			"defaultConfiguration": "production",
+			"configurations": {
+				"development": {
+					"mode": "development"
+				},
+				"production": {
+					"sourcemap": false,
+					"mode": "production"
+				}
+			}
+		},
+		"serve": {
+			"executor": "@nx/vite:dev-server",
+			"defaultConfiguration": "development",
+			"options": {
+				"buildTarget": "personal-site:build",
+				"port": 4200
+			},
+			"configurations": {
+				"development": {
+					"buildTarget": "personal-site:build:development",
+					"hmr": true
+				},
+				"production": {
+					"buildTarget": "personal-site:build:production"
+				}
+			}
+		},
+		"extract-i18n": {
+			"executor": "@angular-devkit/build-angular:extract-i18n",
+			"options": {
+				"browserTarget": "personal-site:build"
+			}
+		},
+		"lint": {
+			"executor": "@nx/linter:eslint",
+			"outputs": [
+				"{options.outputFile}"
+			],
+			"options": {
+				"lintFilePatterns": [
+					"apps/personal-site/**/*.ts",
+					"apps/personal-site/**/*.html"
+				]
+			}
+		},
+		"test": {
+			"executor": "@nx/vite:test",
+			"outputs": [
+				"apps/personal-site/coverage"
+			]
+		}
+	},
+	"tags": []
 }

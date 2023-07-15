@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, inject } from '@angular/core';
+import { ThemeService } from '@personal-porfolio/shared-ui/services';
 
 @Component({
 	selector: 'personal-site-analog-welcome',
@@ -344,14 +345,32 @@ import { Component } from '@angular/core';
           <button (click)="increment()" class="secondary-button">
             Count: <span class="count">{{ count }}</span>
           </button>
+			 <button (click)="toggle()" class="secondary-button">
+            toggle Theme: {{ theme }}
+          </button>
         </div>
       </section>
     </main>
   `,
 })
 export class AnalogWelcomeComponent {
+
+	private themeService = inject(ThemeService);
+
 	public count = 0;
-	public increment() {
+	public theme = '';
+	
+	ngOnInit(): void {
+		this.theme = this.themeService.getCurrentTheme();
+	}
+	
+	
+	increment() {
 		this.count++;
+	}
+
+	toggle() {
+		this.themeService.toggleTheme();
+		this.theme = this.themeService.getCurrentTheme()
 	}
 }
