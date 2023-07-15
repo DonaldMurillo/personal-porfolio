@@ -15,25 +15,25 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@personal-porfolio/shared-ui/components": [
+      "@personal-portfolio/shared-ui/components": [
         "libs/shared-ui/components/src/index.ts"
       ],
-      "@personal-porfolio/shared-ui/d-sys": [
+      "@personal-portfolio/shared-ui/d-sys": [
         "libs/shared-ui/d-sys/src/index.ts"
       ],
-      "@personal-porfolio/shared-ui/directives": [
+      "@personal-portfolio/shared-ui/directives": [
         "libs/shared-ui/directives/src/index.ts"
       ],
-      "@personal-porfolio/shared-ui/interfaces": [
+      "@personal-portfolio/shared-ui/interfaces": [
         "libs/shared-ui/interfaces/src/index.ts"
       ],
-      "@personal-porfolio/shared-ui/pipes": [
+      "@personal-portfolio/shared-ui/pipes": [
         "libs/shared-ui/pipes/src/index.ts"
       ],
-      "@personal-porfolio/shared-ui/services": [
+      "@personal-portfolio/shared-ui/services": [
         "libs/shared-ui/services/src/index.ts"
       ],
-      "@personal-porfolio/shared-ui/utils": [
+      "@personal-portfolio/shared-ui/utils": [
         "libs/shared-ui/utils/src/index.ts"
       ]
     }

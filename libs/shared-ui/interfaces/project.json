@@ -2,7 +2,7 @@
   "name": "shared-ui-interfaces",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/shared-ui/interfaces/src",
-  "prefix": "personal-porfolio",
+  "prefix": "personal-portfolio",
   "tags": [],
   "projectType": "library",
   "targets": {

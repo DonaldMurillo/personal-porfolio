@@ -2,7 +2,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'personal-porfolio-nx-welcome',
+  selector: 'personal-portfolio-nx-welcome',
   standalone: true,
   imports: [CommonModule],
   template: `

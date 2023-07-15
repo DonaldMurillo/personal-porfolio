@@ -2,7 +2,7 @@
   "name": "shared-ui-directives",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/shared-ui/directives/src",
-  "prefix": "personal-porfolio",
+  "prefix": "personal-portfolio",
   "tags": [],
   "projectType": "library",
   "targets": {

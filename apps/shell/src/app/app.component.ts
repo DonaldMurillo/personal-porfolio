@@ -5,7 +5,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 @Component({
   standalone: true,
   imports: [NxWelcomeComponent, RouterModule],
-  selector: 'personal-porfolio-root',
+  selector: 'personal-portfolio-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less'],
 })

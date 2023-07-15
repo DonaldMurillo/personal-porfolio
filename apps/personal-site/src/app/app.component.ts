@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ThemeService } from '@personal-porfolio/shared-ui/services';
+import { ThemeService } from '@personal-portfolio/shared-ui/services';
 
 @Component({
 	selector: 'personal-site-root',

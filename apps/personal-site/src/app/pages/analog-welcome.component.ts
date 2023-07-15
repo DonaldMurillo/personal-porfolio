@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, inject } from '@angular/core';
-import { ThemeService } from '@personal-porfolio/shared-ui/services';
+import { ThemeService } from '@personal-portfolio/shared-ui/services';
 
 @Component({
 	selector: 'personal-site-analog-welcome',

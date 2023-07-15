@@ -2,7 +2,7 @@
   "name": "shared-ui-pipes",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/shared-ui/pipes/src",
-  "prefix": "personal-porfolio",
+  "prefix": "personal-portfolio",
   "tags": [],
   "projectType": "library",
   "targets": {
